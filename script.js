@@ -1,70 +1,37 @@
-const ValorCadena = "instituto Alfa Carabobo"
-const ValorNumerico = 2024
-const ValorBooleano = true
-const ValorIndefinido = undefined
-const ValorNulo = null
 
-
-const Valorista = [
-    "oscar",
-    "genesis",
-    "manuel",
-    "alexandra"
-]
-
-const Usuario = {
-    name: "oscar",
-    age: 36,
-    email: "oscar@gmail.com",
-    password: "contraseña01",
-    addres: {
-        country: "usa",
-        state: "texas",
-
-    }
-}
-
-if(Usuario.age >= 18)  {
-        console.log ("es mayor de edad") 
-
-
-} 
-else {
-    console.log(
-
-    )
-
-}
-
-
-const myFuncion = (num1, num2) => {
-
-const suma = num1 + num2
-
-
-    return suma
-}
-
-const ValidateNumber = (num)=> {
-
-if(num % 2 ==0 ) {
-    return "part"
-
-} else {
-    return "impar"
-}
-
-    
-}
-
-
-
-console.log( ValidateNumber(8) )
 
 axios.get("https://leonardoapi.onrender.com/songs")
-.then((res) => {
-    res.data.songs.map( (song) => {
-document.write(song.author)
-    } )
+  .then(response => {
+    const data = response.data.songs; // Los datos de la API
+    const selectedSongs = data.slice(0, 9); // Obtén las primeras 7 canciones
+    // Aquí puedes procesar los datos y agregarlos al contenedor
+    const container = document.getElementById("track-list");
+    selectedSongs.forEach(song => {
+      const div = document.createElement("div");
+      div.classList.add("song");
+      div.innerHTML = `
+        <img src="${song.path.front}" alt="">
+        <p>${song.title}</p>
+        <button></button>
+      `;
+      container.appendChild(div);
+    });
+  })
+  .catch(error => {
+    console.error("Error al obtener datos de la API:", error);
+  });
 
-} ) 
+
+  axios.get("https://leonardoapi.onrender.com/songs")
+  .then(response => {
+    const data = response.data.songs;
+    const songList = document.getElementById("song-list");
+    data.forEach(song => {
+      const li = document.createElement("li");
+      li.textContent = song.title;
+      songList.appendChild(li);
+    });
+  })
+  .catch(error => {
+    console.error("Error al obtener datos de la API:", error);
+  });

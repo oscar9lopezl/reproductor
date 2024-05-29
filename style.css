@@ -1,0 +1,142 @@
+:root {
+    --color-blanco: red;
+    --color-blanco: black;
+
+}
+
+* {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: #f1e9e9;
+    list-style: none;
+
+    box-sizing: border-box;
+
+    padding: unset;
+    margin: unset;
+
+    outline: unset;
+    background-color: #201f1f
+}
+
+.icons {
+    padding: 5px 5px;
+    height: 56px;
+    width: 56px;
+
+}
+
+h1 {
+    line-height: 100%;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+
+
+
+}
+
+h3 {
+    font-size: 19px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.barra {
+    display: flex;
+   
+    align-content: center;
+    justify-content: center;
+    height: 70px;
+    width: 100 vw;
+    padding-top: 10px;
+    padding-left: 180px;
+    gap: 10px;
+}
+
+.astro {
+    max-width: 56px;
+    max-height: 56px;
+    display: flex;
+
+}
+
+
+.barra h1 {
+padding-top: 20px;
+}
+
+.barra nav {
+    
+background-color: transparent;
+color: #f1e9e9;
+padding-top: 20px;
+padding-left: 300px;
+}
+
+
+.lista {
+     
+    gap: 200px;
+    padding-left: 200px;
+}
+
+.lista button{
+border: color transparent;
+background-color: transparent;
+}
+
+.esta {
+display: flex;
+
+
+width:99vw ;
+height:65vh ;
+
+
+padding: 10px;
+}
+
+
+
+.song {
+display: flex; 
+    
+margin-bottom: 10px; /* Espacio entre las imágenes */
+  }
+  
+  .song img {
+    max-width: 80px; 
+    max-height: 80px; 
+    margin-right: 8px; 
+  }
+
+  
+  
+  .otro_div {
+    display: flex;    
+      padding: 10px;
+      
+      flex-grow: 1; 
+      
+      
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  
+  
