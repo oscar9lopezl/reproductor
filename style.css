@@ -1,160 +1,160 @@
 :root {
-    --color-blanco: red;
-    --color-blanco: black;
+  --color-blanco: red;
+  --color-blanco: black;
 
 }
 
 * {
-    font-size: 16px;
-    font-weight: 400;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #ffffff;
-    list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+  list-style: none;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    padding: unset;
-    margin: unset;
+  padding: unset;
+  margin: unset;
 
-    outline: unset;
-    background-color: #1e1e1e
+  outline: unset;
+  background-color: #1e1e1e
 }
 
 .icons {
-    padding: 5px 5px;
-    height: 56px;
-    width: 56px;
+  padding: 5px 5px;
+  height: 56px;
+  width: 56px;
 
 }
 
 h1 {
-    line-height: 100%;
-    font-size: 32px;
-    font-weight: 700;
-    color: #ffffff;
+  line-height: 100%;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 h2 {
-    font-size: 24px;
-    font-weight: 500;
-    color:#ffffff
-
-
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff
 }
 
 h3 {
-    font-size: 19px;
-    font-weight: 700;
-    color: #ffffff
-    
+  font-size: 19px;
+  font-weight: 700;
+  color: #ffffff
 }
 
 h4 {
 
-    font-size: 16px;
-    font-weight: 400;
-    color:#ffffff
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff
 }
+
 .barra {
-    display: flex;
-   
-    align-content: center;
-    justify-content: center;
-    height: 70px;
-    width: 100 vw;
-    padding-top: 10px;
-    padding-left: 180px;
-    gap: 10px;
+  display: flex;
+
+  align-content: center;
+  justify-content: center;
+  height: 70px;
+  width: 100 vw;
+  padding-top: 10px;
+  padding-left: 180px;
+  gap: 10px;
 }
 
 .astro {
-    max-width: 56px;
-    max-height: 56px;
-    display: flex;
+  max-width: 56px;
+  max-height: 56px;
+  display: flex;
 
 }
 
 
 .barra h1 {
-padding-top: 20px;
+  padding-top: 20px;
 }
 
 .barra nav {
-    
-background-color: transparent;
-color: #ffffff;
-padding-top: 20px;
-padding-left: 300px;
+
+  background-color: transparent;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-left: 300px;
 }
 
 
 .lista {
-     
-    gap: 200px;
-    padding-left: 200px;
+
+  gap: 200px;
+  padding-left: 200px;
 }
 
-.lista button{
-border: solid transparent;
-background-color: transparent;
+.lista button {
+  border: solid transparent;
+  background-color: transparent;
 }
 
 .esta {
-   
-    flex-grow: 250px 1fr;
-display: flex;
 
-width:99vw ;
-height:65vh ;
+  flex-grow: 250px 1fr;
+  display: flex;
+
+  width: 99vw;
+  height: 65vh;
 
 
-padding: 10px;
+  padding: 10px;
 
 }
 
 
 
 .song-list {
-    padding: 5px 5xp 5px 5px;
+  padding: 5px 5xp 5px 5px;
 
-display: flex; 
-flex-direction: column;
-  justify-content: space-between;  
-margin-bottom: 30px; /* Espacio entre las imágenes */
-  }
-  .song{
-    display: flex;
-  }
-  
-  .song img {
-    max-width: 80px; 
-    max-height: 80px; 
-    margin-right: 8px; 
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  /* Espacio entre las imágenes */
+}
 
-  
-  
-  .otro_div {
-    
-    display: flex;    
-      
-      
-      flex-grow: 1; 
-      
-      
-      display: flex;
-     
-  }
+.song {
+  display: flex;
+}
 
-  .otro_div button{
-    border: solid blue;
-border-radius: 40px;
-max-width: 40px;
-max-height: 40px;
-  }
-  
+.song img {
+  max-width: 80px;
+  max-height: 80px;
+  margin-right: 8px;
+}
 
-  #audio-player {
-border: solid white;
 
-  }
+
+.otro_div {
+
+  display: flex;
+
+
+  flex-grow: 1;
+
+
+  display: flex;
+
+}
+
+.otro_div button {
+  border: solid blue;
+  border-radius: 40px;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+
+#audio-player {
+  border: solid white;
+
+}
