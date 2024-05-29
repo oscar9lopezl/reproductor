@@ -1,5 +1,3 @@
-
-
 axios.get("https://leonardoapi.onrender.com/songs")
   .then(response => {
     const data = response.data.songs; // Los datos de la API
@@ -25,6 +23,19 @@ axios.get("https://leonardoapi.onrender.com/songs")
   axios.get("https://leonardoapi.onrender.com/songs")
   .then(response => {
     const data = response.data.songs;
+
+    // Crear una carpeta base para las canciones
+    const baseFolder = "canciones";
+
+    // Iterar sobre las canciones y crear carpetas
+    data.forEach((song, index) => {
+      const songFolder = `${baseFolder}/cancion${index + 1}`;
+      // Aquí puedes guardar la imagen de la canción en la carpeta correspondiente
+      // Por ejemplo: fs.writeFileSync(path.join(songFolder, "imagen.jpg"), song.imageData);
+    });
+
+    // Mostrar los nombres de las canciones en un contenedor
+    const songListContainer = document.getElementById("song-containers");
     const songList = document.getElementById("song-list");
     data.forEach(song => {
       const li = document.createElement("li");

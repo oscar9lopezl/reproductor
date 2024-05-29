@@ -8,7 +8,7 @@
     font-size: 16px;
     font-weight: 400;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-color: #f1e9e9;
+    color: #ffffff;
     list-style: none;
 
     box-sizing: border-box;
@@ -17,7 +17,7 @@ color: #f1e9e9;
     margin: unset;
 
     outline: unset;
-    background-color: #201f1f
+    background-color: #1e1e1e
 }
 
 .icons {
@@ -31,14 +31,13 @@ h1 {
     line-height: 100%;
     font-size: 32px;
     font-weight: 700;
-    color: white;
+    color: #ffffff;
 }
 
 h2 {
     font-size: 24px;
     font-weight: 500;
-    color: white;
-
+    color:#ffffff
 
 
 }
@@ -46,16 +45,16 @@ h2 {
 h3 {
     font-size: 19px;
     font-weight: 700;
-    color: white;
-    text-align: center;
+    color: #ffffff
+    
 }
 
 h4 {
+
     font-size: 16px;
     font-weight: 400;
-    color: white;
+    color:#ffffff
 }
-
 .barra {
     display: flex;
    
@@ -83,7 +82,7 @@ padding-top: 20px;
 .barra nav {
     
 background-color: transparent;
-color: #f1e9e9;
+color: #ffffff;
 padding-top: 20px;
 padding-left: 300px;
 }
@@ -96,27 +95,35 @@ padding-left: 300px;
 }
 
 .lista button{
-border: color transparent;
+border: solid transparent;
 background-color: transparent;
 }
 
 .esta {
+   
+    flex-grow: 250px 1fr;
 display: flex;
-
 
 width:99vw ;
 height:65vh ;
 
 
 padding: 10px;
+
 }
 
 
 
-.song {
+.song-list {
+    padding: 5px 5xp 5px 5px;
+
 display: flex; 
-    
-margin-bottom: 10px; /* Espacio entre las imágenes */
+flex-direction: column;
+  justify-content: space-between;  
+margin-bottom: 30px; /* Espacio entre las imágenes */
+  }
+  .song{
+    display: flex;
   }
   
   .song img {
@@ -128,15 +135,26 @@ margin-bottom: 10px; /* Espacio entre las imágenes */
   
   
   .otro_div {
+    
     display: flex;    
-      padding: 10px;
+      
       
       flex-grow: 1; 
       
       
       display: flex;
-      flex-wrap: wrap;
+     
   }
 
+  .otro_div button{
+    border: solid blue;
+border-radius: 40px;
+max-width: 40px;
+max-height: 40px;
+  }
   
-  
+
+  #audio-player {
+border: solid white;
+
+  }
