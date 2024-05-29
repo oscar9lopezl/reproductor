@@ -54,9 +54,7 @@ axios.get("https://leonardoapi.onrender.com/songs")
         // ('current-song-img').setAttribute('src',
         // song.path.front)
 
-        document.getElementById
-          ('current-song-audio').setAttribute('src',
-            song.path.audio)
+        document.getElementById('current-song-audio').setAttribute('src',song.path.audio)
 
       })
 
