@@ -109,9 +109,38 @@ h4 {
   padding: 10px;
 
 }
+.tendencias {
+  border: solid blue;
+  width: 100vw;
+  height:400px;
+}
 
+.arriba{
+  border: solid white;
+  height: 200px;
+  width: 1150px;
+}
+.arriba ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-
+}
+.arriba img {
+  width: 100%;
+  object-fit: contain;
+}
+.arriba li{
+  max-width: 120px;
+  max-height: 60px;
+  margin-right: 8px;
+}
+.abajo{
+  border: solid red;
+  height: 200px;
+  width: 1150px;
+  display: flex;
+}
 .song-list {
   padding: 5px 5xp 5px 5px;
 
@@ -128,7 +157,7 @@ h4 {
 
 .song img {
   max-width: 80px;
-  max-height: 80px;
+  max-height: 40px;
   margin-right: 8px;
 }
 
@@ -152,9 +181,30 @@ h4 {
   max-width: 40px;
   max-height: 40px;
 }
-
-
-#audio-player {
-  border: solid white;
-
+.reproductor {
+  width: 1200px;
+  height: 100px;
+  background-color: #0e0d0d;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
+.boton {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.boton img {
+  width: 32px;
+  height: 32px;
+}
+.boton {
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
